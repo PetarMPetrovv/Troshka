@@ -27,6 +27,7 @@ public class UserEntity {
     @Column(nullable=false)
     private String password;
 
+    //testing pull request
     @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(
             name="users_roles",
